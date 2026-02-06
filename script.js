@@ -1,7 +1,8 @@
 const urls = [
   "https://raw.githubusercontent.com/IPTVFlixBD/Fancode-BD/refs/heads/main/playlist.m3u",
   "https://raw.githubusercontent.com/biostartvworld/playlist/refs/heads/main/playlist.m3u",
-  "https://raw.githubusercontent.com/sm-monirulislam/RoarZone-Auto-Update-playlist/refs/heads/main/RoarZone.m3u"
+  "https://raw.githubusercontent.com/sm-monirulislam/RoarZone-Auto-Update-playlist/refs/heads/main/RoarZone.m3u",
+  "https://raw.githubusercontent.com/Miraz6755/Iptv.m3u/refs/heads/main/Miraz%20tv"
 ];
 
 let channels = [];
@@ -56,7 +57,7 @@ style.innerHTML=`@keyframes spin {0%{transform:translate(-50%,-50%) rotate(0deg)
 document.head.appendChild(style);
 
 const watermark = document.createElement("div");
-watermark.innerHTML = `<img src="https://thebengalee.com/wp-content/uploads/2025/12/Biostar_TV-removebg-preview-1.webp" style="width:70px;height:70px;">`;
+watermark.innerHTML = `<img src="" style="width:70px;height:70px;">`;
 Object.assign(watermark.style,{position:"absolute",right:"5px",bottom:"2px",zIndex:"7",opacity:"0.9",filter:"drop-shadow(0 6px 12px rgba(0,0,0,.8))",pointerEvents:"none"});
 wrap.appendChild(watermark);
 
@@ -108,7 +109,7 @@ setInterval(()=>{
 },1000);
 
 const tg=document.createElement("a");
-tg.href="https://t.me/biostartvworld";tg.target="_blank";
+tg.href="";tg.target="_blank";
 tg.innerHTML=`<svg viewBox="0 0 24 24" width="26" height="26" fill="#fff"><path d="M9.04 15.84 8.7 19.6c.49 0 .7-.21.96-.46l2.3-2.2 4.77 3.49c.87.48 1.49.23 1.7-.8l3.08-14.44h0c.26-1.22-.44-1.7-1.28-1.39L1.62 9.2c-1.18.46-1.16 1.12-.2 1.42l4.7 1.47L17.4 5.9c.55-.36 1.06-.16.64.2"/></svg>`;
 Object.assign(tg.style,{position:"fixed",bottom:"20px",right:"20px",width:"52px",height:"52px",background:"#229ED9",borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",boxShadow:"0 4px 12px rgba(0,0,0,.3)",zIndex:"99999",textDecoration:"none"});
 document.body.appendChild(tg);
